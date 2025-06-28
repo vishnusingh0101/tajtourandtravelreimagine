@@ -239,7 +239,7 @@ export default function BookingForm() {
                 </div>
 
                 <div className="flex justify-end">
-                  <Button type="button" onClick={nextStep} className="bg-royal-blue hover:bg-blue-800">
+                  <Button type="button" onClick={nextStep} className="bg-ocean-blue hover:bg-blue-800">
                     Next Step
                     <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
@@ -374,7 +374,7 @@ export default function BookingForm() {
                     <i className="fas fa-arrow-left mr-2"></i>
                     Previous
                   </Button>
-                  <Button type="button" onClick={nextStep} className="bg-royal-blue hover:bg-blue-800">
+                  <Button type="button" onClick={nextStep} className="bg-ocean-blue hover:bg-blue-800">
                     Review Booking
                     <i className="fas fa-arrow-right ml-2"></i>
                   </Button>
@@ -441,7 +441,7 @@ export default function BookingForm() {
                   </Button>
                   <Button 
                     type="submit" 
-                    className="bg-rich-crimson hover:bg-red-700"
+                    className="bg-sunset-orange hover:bg-orange-600 conversion-gradient"
                     disabled={createBookingMutation.isPending}
                   >
                     {createBookingMutation.isPending ? (

@@ -24,12 +24,15 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Custom colors for Taj India Tour */
-  --royal-blue: hsl(222, 83%, 32%);
-  --warm-gold: hsl(40, 94%, 48%);
-  --rich-crimson: hsl(0, 79%, 63%);
-  --warm-gray: hsl(220, 9%, 46%);
-  --soft-cream: hsl(49, 44%, 97%);
+  /* High-Converting Travel Colors - Based on Top Sites */
+  --ocean-blue: hsl(218, 85%, 32%);      /* Booking.com inspired - Trust & Security */
+  --sunset-orange: hsl(21, 89%, 52%);    /* Highest Converting CTA Color */
+  --deep-navy: hsl(220, 100%, 15%);      /* Premium Authority */
+  --champagne-gold: hsl(46, 78%, 85%);   /* Luxury Accent */
+  --warm-coral: hsl(14, 100%, 70%);      /* Airbnb inspired warmth */
+  --sage-green: hsl(100, 20%, 60%);      /* Sustainable/Eco tourism */
+  --mocha-mousse: hsl(25, 25%, 65%);     /* 2025 Pantone Color */
+  --pearl-white: hsl(210, 20%, 98%);
 }
 
 .dark {
@@ -71,44 +74,71 @@
 }
 
 @layer utilities {
-  .text-royal-blue {
-    color: hsl(222, 83%, 32%);
+  /* Ocean Blue - Primary Trust Color */
+  .text-ocean-blue {
+    color: hsl(218, 85%, 32%);
+  }
+  .bg-ocean-blue {
+    background-color: hsl(218, 85%, 32%);
   }
   
-  .bg-royal-blue {
-    background-color: hsl(222, 83%, 32%);
+  /* Sunset Orange - High Converting CTA */
+  .text-sunset-orange {
+    color: hsl(21, 89%, 52%);
+  }
+  .bg-sunset-orange {
+    background-color: hsl(21, 89%, 52%);
   }
   
-  .text-warm-gold {
-    color: hsl(40, 94%, 48%);
+  /* Deep Navy - Premium Authority */
+  .text-deep-navy {
+    color: hsl(220, 100%, 15%);
+  }
+  .bg-deep-navy {
+    background-color: hsl(220, 100%, 15%);
   }
   
-  .bg-warm-gold {
-    background-color: hsl(40, 94%, 48%);
+  /* Champagne Gold - Luxury Accent */
+  .text-champagne-gold {
+    color: hsl(46, 78%, 85%);
+  }
+  .bg-champagne-gold {
+    background-color: hsl(46, 78%, 85%);
   }
   
-  .text-rich-crimson {
-    color: hsl(0, 79%, 63%);
+  /* Warm Coral - Welcoming Feel */
+  .text-warm-coral {
+    color: hsl(14, 100%, 70%);
+  }
+  .bg-warm-coral {
+    background-color: hsl(14, 100%, 70%);
   }
   
-  .bg-rich-crimson {
-    background-color: hsl(0, 79%, 63%);
+  /* Mocha Mousse - 2025 Trending */
+  .text-mocha-mousse {
+    color: hsl(25, 25%, 65%);
+  }
+  .bg-mocha-mousse {
+    background-color: hsl(25, 25%, 65%);
   }
   
-  .text-warm-gray {
-    color: hsl(220, 9%, 46%);
-  }
-  
-  .bg-warm-gray {
-    background-color: hsl(220, 9%, 46%);
-  }
-  
-  .bg-soft-cream {
-    background-color: hsl(49, 44%, 97%);
-  }
-  
+  /* Premium Gradients */
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(222, 83%, 32%, 0.8), hsl(40, 94%, 48%, 0.3));
+    background: linear-gradient(135deg, 
+      hsl(218, 85%, 32%, 0.9), 
+      hsl(21, 89%, 52%, 0.4));
+  }
+  
+  .luxury-gradient {
+    background: linear-gradient(135deg, 
+      hsl(220, 100%, 15%, 0.95), 
+      hsl(46, 78%, 85%, 0.3));
+  }
+  
+  .conversion-gradient {
+    background: linear-gradient(135deg, 
+      hsl(21, 89%, 52%), 
+      hsl(14, 100%, 70%));
   }
   
   .card-hover {

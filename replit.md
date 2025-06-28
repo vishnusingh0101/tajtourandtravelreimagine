@@ -96,6 +96,10 @@ The application is designed to be deployed on platforms like Replit, Vercel, or 
 ```
 Changelog:
 - June 28, 2025. Initial setup
+- June 28, 2025. Updated to high-converting color scheme based on research of top travel websites (Booking.com, Airbnb, Expedia)
+  * Replaced royal blue/gold with Ocean Blue (#218 85% 32%) and Sunset Orange (#21 89% 52%)
+  * Added premium luxury gradients and 2025 trending Mocha Mousse accents
+  * Implemented research-backed conversion-optimized CTA button colors
 ```
 
 ## User Preferences

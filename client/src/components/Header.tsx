@@ -44,12 +44,12 @@ export default function Header() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-royal-blue to-warm-gold rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-ocean-blue to-sunset-orange rounded-full flex items-center justify-center">
                 <i className="fas fa-mosque text-white text-xl"></i>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-royal-blue font-serif">Taj India Tour</h1>
-                <p className="text-xs text-warm-gray">& Travel</p>
+                <h1 className="text-xl font-bold text-ocean-blue font-serif">Taj India Tour</h1>
+                <p className="text-xs text-mocha-mousse">& Travel</p>
               </div>
             </motion.div>
           </Link>
@@ -61,8 +61,8 @@ export default function Header() {
                 <motion.span
                   className={`cursor-pointer transition-colors ${
                     location === item.href 
-                      ? "text-royal-blue font-semibold" 
-                      : "text-gray-700 hover:text-royal-blue"
+                      ? "text-ocean-blue font-semibold" 
+                      : "text-gray-700 hover:text-ocean-blue"
                   }`}
                   whileHover={{ y: -2 }}
                   transition={{ duration: 0.2 }}
@@ -76,11 +76,11 @@ export default function Header() {
           {/* Contact Info & CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <div className="text-right">
-              <p className="text-sm font-semibold text-royal-blue">+91 98765 43210</p>
-              <p className="text-xs text-warm-gray">24/7 Support</p>
+              <p className="text-sm font-semibold text-ocean-blue">+91 98765 43210</p>
+              <p className="text-xs text-mocha-mousse">24/7 Support</p>
             </div>
             <Link href="/booking">
-              <Button className="bg-rich-crimson text-white hover:bg-red-700 rounded-full">
+              <Button className="bg-sunset-orange text-white hover:bg-orange-600 rounded-full conversion-gradient">
                 Book Now
               </Button>
             </Link>
@@ -89,19 +89,19 @@ export default function Header() {
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="lg:hidden text-royal-blue">
+              <Button variant="ghost" size="icon" className="lg:hidden text-ocean-blue">
                 <i className="fas fa-bars text-2xl"></i>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-80" aria-describedby="mobile-nav-description">
               <div className="flex flex-col space-y-6 mt-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-royal-blue to-warm-gold rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-to-br from-ocean-blue to-sunset-orange rounded-full flex items-center justify-center">
                     <i className="fas fa-mosque text-white text-sm"></i>
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-royal-blue">Taj India Tour</h2>
-                    <p className="text-xs text-warm-gray">& Travel</p>
+                    <h2 className="text-lg font-bold text-ocean-blue">Taj India Tour</h2>
+                    <p className="text-xs text-mocha-mousse">& Travel</p>
                   </div>
                 </div>
                 <p id="mobile-nav-description" className="sr-only">
@@ -114,8 +114,8 @@ export default function Header() {
                       <motion.span
                         className={`block text-lg cursor-pointer transition-colors ${
                           location === item.href 
-                            ? "text-royal-blue font-semibold" 
-                            : "text-gray-700 hover:text-royal-blue"
+                            ? "text-ocean-blue font-semibold" 
+                            : "text-gray-700 hover:text-ocean-blue"
                         }`}
                         onClick={() => setIsOpen(false)}
                         whileHover={{ x: 4 }}

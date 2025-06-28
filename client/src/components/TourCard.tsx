@@ -78,18 +78,18 @@ export default function TourCard({
       
       <div className="p-6">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-royal-blue">{title}</h3>
+          <h3 className="text-xl font-bold text-ocean-blue">{title}</h3>
           {getAvailabilityBadge()}
         </div>
         
-        <p className="text-warm-gray mb-4">{description}</p>
+        <p className="text-mocha-mousse mb-4">{description}</p>
         
         <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center text-sm text-warm-gray">
+          <div className="flex items-center text-sm text-mocha-mousse">
             <i className="fas fa-clock mr-1"></i>
             <span>{duration}</span>
           </div>
-          <div className="flex items-center text-sm text-warm-gray">
+          <div className="flex items-center text-sm text-mocha-mousse">
             <i className="fas fa-users mr-1"></i>
             <span>2-8 People</span>
           </div>
@@ -97,11 +97,11 @@ export default function TourCard({
         
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-2xl font-bold text-rich-crimson">₹{price.toLocaleString()}</span>
-            <span className="text-sm text-warm-gray">/person</span>
+            <span className="text-2xl font-bold text-sunset-orange">₹{price.toLocaleString()}</span>
+            <span className="text-sm text-mocha-mousse">/person</span>
           </div>
           <Link href="/booking">
-            <Button className="bg-royal-blue text-white hover:bg-blue-800 rounded-full">
+            <Button className="bg-sunset-orange text-white hover:bg-orange-600 rounded-full conversion-gradient">
               Book Now
             </Button>
           </Link>

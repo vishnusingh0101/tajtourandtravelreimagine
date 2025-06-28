@@ -65,14 +65,14 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.6 }}
           >
             <Link href="/packages">
-              <Button className="bg-warm-gold text-royal-blue px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105">
+              <Button className="bg-sunset-orange text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-all transform hover:scale-105 conversion-gradient">
                 <i className="fas fa-map-marked-alt mr-2"></i>
                 View Packages
               </Button>
             </Link>
             <Button 
               variant="outline"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-royal-blue transition-all"
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-ocean-blue transition-all"
               onClick={() => window.open("tel:+919876543210")}
             >
               <i className="fas fa-phone mr-2"></i>
