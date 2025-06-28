@@ -1,0 +1,213 @@
+🧱 Tech Stack & Libraries
+ReactJS (latest version)
+
+React Router (for page routing)
+
+Tailwind CSS or Bootstrap (for styling — Tailwind preferred)
+
+Framer Motion (for animations, e.g., image transitions, modals)
+
+React Hook Form (for booking/contact form validation)
+
+SwiperJS (for carousels/testimonials)
+
+Font Awesome or Lucide Icons
+
+Mock API or JSON for data handling
+
+📁 Project Structure
+css
+Copy
+Edit
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── TourCard.jsx
+│   ├── DestinationCard.jsx
+│   ├── ServiceCard.jsx
+│   ├── ReviewCarousel.jsx
+│   └── BookingForm.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── GoldenTriangle.jsx
+│   ├── DelhiVrindavan.jsx
+│   ├── SameDayAgra.jsx
+│   ├── SameDayJaipur.jsx
+│   ├── Destinations.jsx
+│   ├── Packages.jsx
+│   └── Booking.jsx
+├── data/
+│   └── tours.json
+│   └── destinations.json
+│   └── services.json
+├── App.jsx
+└── main.jsx
+🧭 Pages & Routes
+Use react-router-dom for navigation.
+
+/ – Home
+
+/golden-triangle-tour
+
+/delhi-vrindavan-package
+
+/same-day-agra-tour
+
+/same-day-jaipur-tour
+
+/destinations
+
+/packages
+
+/booking
+
+🎨 Design Guidelines
+Clean, responsive layout
+
+Use soft shadows, smooth animations
+
+Hero section with background image or slideshow
+
+Use Indian travel visual motifs where appropriate
+
+Cards with hover effects for tours/services
+
+Consistent typography and spacing
+
+Mobile-first design with breakpoints
+
+🏠 Home Page Content
+Header
+
+Logo + Phone & Email
+
+Navigation menu
+
+Hero Section
+
+Catchy tagline like “Discover India with Ease”
+
+CTA: “View Packages” + background slideshow
+
+Awesome Packages
+
+Showcase key tours: Golden Triangle, Same-Day Agra/Jaipur, Vrindavan, etc.
+
+TourCard layout: image, title, price, short desc, “Book Now”
+
+Why Choose Us?
+
+Icons + short text (Car Rentals, Hotels, Travel Guides, Flights/Trains)
+
+How It Works
+
+3 illustrated steps (1. Pick package, 2. Book, 3. Travel)
+
+Customer Reviews
+
+Swiper Carousel of 2–5 testimonials
+
+CTA Section
+
+“Book Your Tour Today!” button
+
+Footer
+
+Quick links, Contact Info, Terms/Privacy, Social icons
+
+🧳 Tour Package Pages
+Each has:
+
+Hero/banner with title (e.g., “Golden Triangle Tour”)
+
+Itinerary per day
+
+Pricing
+
+Inclusions/Exclusions
+
+Gallery of 2–3 images
+
+"Book This Tour" CTA button
+
+Tour data can be passed via props or pulled from tours.json
+
+🧭 Destinations Page
+Grid of destinations (e.g., Agra, Jaipur, Rishikesh)
+
+Each card has image, name, optional discount tag
+
+Cards link to relevant tour pages
+
+🎁 Packages Page
+Grid/List of all packages
+
+Each has title, short description, price
+
+Buttons: “Book Now” and “Read More”
+
+Optionally allow sorting/filtering (duration, price)
+
+📝 Booking Page
+Multi-field form (React Hook Form):
+
+Full Name
+
+Email
+
+Phone Number
+
+Destination
+
+Travel Dates
+
+Message / Preferences
+
+Submit triggers form validation + logs or mocks API call
+
+Success message on submit
+
+✨ Additional Features (Optional)
+SEO meta tags per page (e.g., <Helmet>)
+
+Floating WhatsApp button
+
+Sticky header on scroll
+
+Scroll-to-top button
+
+Lazy loading images
+
+Testimonials from JSON file
+
+🧪 Example TourCard Component (React + Tailwind)
+jsx
+Copy
+Edit
+const TourCard = ({ title, price, image, description }) => (
+  <div className="rounded-xl shadow-md hover:shadow-lg p-4 bg-white">
+    <img src={image} alt={title} className="rounded-lg h-48 w-full object-cover" />
+    <h3 className="text-xl font-bold mt-2">{title}</h3>
+    <p className="text-sm text-gray-600 mt-1">{description}</p>
+    <div className="flex justify-between items-center mt-3">
+      <span className="text-red-600 font-semibold">From ₹{price}</span>
+      <button className="bg-red-500 text-white px-4 py-2 rounded-full">Book Now</button>
+    </div>
+  </div>
+);
+🧠 Sample JSON (tours.json)
+json
+Copy
+Edit
+[
+  {
+    "id": "golden-triangle",
+    "title": "Golden Triangle Tour",
+    "price": 9500,
+    "duration": "4 Days",
+    "description": "Explore Delhi, Agra, and Jaipur in 4 days.",
+    "image": "/images/golden-triangle.jpg",
+    "route": "/golden-triangle-tour"
+  }
+]

@@ -1,0 +1,80 @@
+1. 🌐 Pages & Routes:
+   - Home
+   - Tours (Golden Triangle, Same Day Agra, Same Day Jaipur, Delhi Vrindavan, etc.)
+   - Destinations
+   - Packages
+   - Booking
+   - About Us
+
+2. 🧭 Navigation:
+   - Sticky header with logo, navigation links, and quick access to top 3 tours.
+   - Mobile hamburger menu.
+
+3. 🏠 Homepage:
+   - Hero section: full-width background image, tagline “Book Your Dream Indian Tour”, CTA buttons.
+   - Popular Tour Packages: Cards with real data (title, price, highlights, “Book Now”).
+   - Smart Recommendations section (mock filtered by “Popular from [User's City]”).
+   - Why Choose Us section with icons (Private Car, Guided Tours, Best Price).
+   - Testimonials carousel with Framer Motion + SwiperJS.
+
+4. 📋 Tour Detail Pages:
+   - Each tour page includes title, banner image, itinerary per day, price, inclusions/exclusions, "Book Now" CTA.
+   - Urgency elements like “3 spots left” or “Booking fast” using simulated real-time tags.
+
+5. 📝 Booking Flow:
+   - Multi-step form with React Hook Form + progress bar.
+   - Fields: Full Name, Email, Phone, Destination, Dates, Message.
+   - Guest checkout with form validation.
+   - Show confirmation and thank-you message on submit.
+
+6. 🧾 Real-Time Info Features:
+   - Countdown timer or “spots remaining” indicator on top-selling tours.
+   - Mock availability updates for selected tours.
+
+7. 👤 About Us Page:
+   - Real team image section.
+   - Agency mission statement and contact info.
+   - Embedded Google Business rating widget from: https://g.co/kgs/nnx5xEn
+   - Show stars (e.g., ⭐⭐⭐⭐⭐ 4.9/5 rating) and review snippets.
+
+8. 📱 Mobile-first UI:
+   - Fully responsive layouts with readable typography, tap targets, and optimized image loading.
+   - Lazy loading, mobile-first Tailwind breakpoints.
+
+9. ✅ Accessibility:
+   - Keyboard navigation support, WCAG color contrast compliance.
+   - Add alt-text on all images.
+
+10. ✨ Framer Motion Enhancements:
+   - Page transitions, fade-ins on scroll, card hover lift effects.
+   - Animated buttons for “Book Now” with pop or ripple effects.
+
+11. 🔎 SEO + Performance:
+   - Use `<Helmet>` for per-page SEO titles + meta descriptions.
+   - Optimize images and minify bundles.
+   - Add structured data (JSON-LD) for tours, reviews, and business info.
+
+12. 🔗 Footer:
+   - Navigation links: Home, Tours, Destinations, Packages, Booking, About Us.
+   - Contact info (email, phone, WhatsApp link).
+   - Social media icons (Facebook, Instagram, TripAdvisor).
+   - Payment Options Section:
+     - Show icons: Visa, MasterCard, Paytm, UPI, GPay, PayPal.
+     - Add secure payment badge.
+   - Google Business Rating:
+     - ⭐ 4.9/5 — link or embed to [https://g.co/kgs/nnx5xEn](https://g.co/kgs/nnx5xEn)
+     - Optionally pull live data via iframe or screenshot snippet.
+   - Copyright © 2025 Taj India Tour and Travel.
+
+13. 📂 Use real content:
+   - Pull real package descriptions, itinerary, prices from tajindiatourandtravel.com.
+   - Use actual images where available or placeholders with clear file names.
+
+🧠 Optional Enhancements You Can Add Later:
+Floating WhatsApp Button
+
+Live Chat Widget (Tawk.to or Crisp)
+
+Package comparison tool
+
+Multi-language support (Hindi/English switch)
