@@ -93,7 +93,7 @@ export default function Header() {
                 <i className="fas fa-bars text-2xl"></i>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80">
+            <SheetContent side="right" className="w-80" aria-describedby="mobile-nav-description">
               <div className="flex flex-col space-y-6 mt-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-royal-blue to-warm-gold rounded-full flex items-center justify-center">
@@ -104,6 +104,9 @@ export default function Header() {
                     <p className="text-xs text-warm-gray">& Travel</p>
                   </div>
                 </div>
+                <p id="mobile-nav-description" className="sr-only">
+                  Mobile navigation menu for Taj India Tour and Travel website
+                </p>
                 
                 <nav className="flex flex-col space-y-4">
                   {navigation.map((item) => (

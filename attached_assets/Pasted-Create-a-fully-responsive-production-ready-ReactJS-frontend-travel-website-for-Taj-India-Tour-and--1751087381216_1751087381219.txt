@@ -1,0 +1,98 @@
+Create a fully responsive, production-ready ReactJS frontend travel website for "Taj India Tour and Travel" with the following specs:
+
+🧰 TECH STACK:
+- ReactJS with functional components and hooks
+- Tailwind CSS for styling
+- Framer Motion for animations
+- React Router DOM for routing
+- React Hook Form for forms and validation
+- Use structured JSON files for all tour, package, testimonial, and destination data (no hardcoding)
+
+📂 STRUCTURE:
+Pages:
+- Home
+- Tours (list view)
+- Tour Details (dynamic route via slug)
+- Booking
+- About Us
+- Contact
+- Destinations
+- Packages
+
+🗃 DATA:
+Use JSON files located in `/data`:
+- `/data/tours.json`: includes slug, title, itinerary, images, highlights, price, etc.
+- `/data/packages.json`
+- `/data/testimonials.json`
+- `/data/destinations.json`
+
+📱 HOME PAGE:
+- Hero section with animation, CTA buttons (“Explore Tours”, “Book Now”)
+- Top Tour Packages (from JSON)
+- Why Choose Us: icons (Private Cab, Best Prices, Guide)
+- Testimonials carousel
+- Stats: 5000+ customers, 4.9★ on Google
+- CTA to view all tours
+
+🎫 TOURS PAGE:
+- Dynamically render all tours from `tours.json`
+- Each card has:
+  - Image, Title, Highlights, Price
+  - Two buttons: “Book Now” and “View Details”
+- View Details shows full itinerary, inclusions, exclusions
+
+📄 TOUR DETAIL PAGE:
+- Render full tour from JSON based on `slug` from route
+- Includes:
+  - Title, Banner Image, Full Itinerary
+  - What’s Included, Excluded
+  - Gallery
+  - Related Packages
+
+📨 BOOKING PAGE:
+- Multi-step booking form (React Hook Form)
+- Fields: Name, Email, Phone, Dates, Package, Travelers, Message
+- Prefill package if user came from “Book Now” button
+- Show confirmation after submission
+
+🛒 FOOTER:
+- Contact info, navigation links
+- Payment methods: Visa, MasterCard, Paytm, UPI, GPay, PayPal
+- Google Review badge (linked to https://g.co/kgs/nnx5xEn)
+- Social icons (Facebook, WhatsApp, Instagram)
+
+✨ ANIMATIONS & EFFECTS:
+- Framer Motion for hero reveal, button hovers, card animations, page transitions
+- Lazy load images
+- Mobile-first design
+
+🛡️ SEO & TRUST:
+- react-helmet for metadata (title, description)
+- JSON-LD schema (Organization, Tour, Breadcrumb)
+- WCAG-compliant color contrast, alt text for all images
+
+📦 EXAMPLE JSON (`tours.json`):
+```json
+[
+  {
+    "slug": "golden-triangle-tour",
+    "title": "Golden Triangle Tour (Delhi, Agra, Jaipur)",
+    "duration": "5 Days / 4 Nights",
+    "price": "₹15,999",
+    "highlights": ["Taj Mahal", "Amber Fort", "India Gate"],
+    "description": "Explore India's iconic cities with a guided journey.",
+    "itinerary": [
+      {"day": "Day 1", "plan": "Delhi sightseeing"},
+      {"day": "Day 2", "plan": "Drive to Agra, visit Taj Mahal"},
+      {"day": "Day 3", "plan": "Fatehpur Sikri en route to Jaipur"},
+      {"day": "Day 4", "plan": "Explore Jaipur forts"},
+      {"day": "Day 5", "plan": "Return to Delhi"}
+    ],
+    "images": ["/images/tours/golden-triangle/1.jpg", "/images/tours/golden-triangle/2.jpg"]
+  }
+]
+📍 OPTIONAL:
+
+Add a WhatsApp floating button
+
+Use SwiperJS for image carousels
